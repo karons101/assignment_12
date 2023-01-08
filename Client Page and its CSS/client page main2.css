@@ -1,0 +1,263 @@
+/*Week 12 main2 CSS*/
+/* General-specific styles for all elements*/
+* {
+  box-sizing: border-box;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-]{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+[class*=col-]{
+  width: 100%;
+}
+
+
+/*CSS media Queries, the screen breakpoints are thus:
+Phones and tiny devices */
+
+Medium landscape tablets:
+@media only screen and (min-width:768px){
+  .col-1{
+    width: 8.33%;
+  }
+}
+
+@media only screen and (max-width:600px){
+
+}
+
+Portrait tablets & large phones:
+@media only screen and (min-width:600px){
+
+}
+
+
+
+Large devices desktops / Laptops
+@media only screen and (min-width:992px){
+
+}
+
+Extra large devices
+@media only screen and (min-width:1200px){
+
+}
+
+/* For The 12 columns for the grid View Layout styles*/
+
+.col-2{
+  width: 16.66%;
+
+}
+.col-3{
+  width: 25%;
+  list-style-type: none;
+  margin-left: 50px;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+  margin-top: 95px;
+  margin-left: 50px;
+
+
+}
+.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+
+
+body {
+  /*margin: 0;*/
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+}
+section {
+  position: relative;
+  top: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+/*topnav control*/
+.topnav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #000000;
+  color: white;
+  z-index: 1;
+
+}
+.topnav ul{
+  list-style-type: none;
+}
+.topnav li {
+  display: inline;
+
+}
+.topnav a{
+  text-decoration: none;
+  margin: 40px;
+  float: right;
+}
+
+li a{
+  text-decoration: none;
+  font-family: georgian;
+  font-size: 30px;
+  font-style: italic;
+}
+/*The different states for the links*/
+li a:link{
+  color: Black;
+}
+li a:visited{
+  color: Blue;
+}
+li a:hover{
+  background-color: Yellow;
+  color: White;
+}
+li a:active{
+  background-color: Red;
+  color: White;
+}
+
+.column2{
+  width: 200%;
+}
+
+.column3{
+  width: 200%;
+}
+
+
+
+
+/* Control Link for left half */
+.left-half {
+    /*background-color: #ff9e2c;*/
+  /*position: absolute;*/
+width: 50%;
+height: 1100px;
+background-image: url("../images/BingWallpaper11.jpg");
+margin-top: -8px;
+margin-left: -7px;
+margin-bottom: 28px;
+}
+
+.column1{
+  width: 350px;
+
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  background-color: lightgray;
+  text-align: left;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+@keyframes animate {
+  from{transform: rotate(0deg); backgroud-color: lightgray;}
+  to{transform: rotate(360deg); backgroud-color: red;}
+}
+ nav li:hover{
+ animation-name: animate;
+ animation-duration: 5s;
+}
+
+
+@keyframes rotate {
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
+
+@keyframes slide {
+  from{margin-right: 100%;}
+  to{margin-left: 100%;}
+}
+
+#animate{
+  animation-name: rotate; /*OR slide*/
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  margin-left: 40px;
+  /*animation-delay: 2s;*/
+  /*animation-direction: reverse;*/
+}
+
+
+
+
+
+.right-half {
+  background-image: url("../images/background1.jpg");
+  /*background-color: #b6701e;*/
+
+  position: relative;
+  float: right;
+  right: 0px;
+  width: 50%;
+  height: 1162px;
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+
+  margin-top: -1190px;
+  margin-right: 6.6px;
+
+
+
+
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  width: 101%;
+  height: 99px;
+  padding: 10px;
+  color: White;
+  overflow: hidden;
+  scroll-behavior: auto;
+}

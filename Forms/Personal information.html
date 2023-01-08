@@ -1,0 +1,95 @@
+<!-- Doctype declearation -->
+<!Doctype html>
+<html>
+<head>
+<!-- Defines the set character of the webpage -->
+<meta charset="utf-8">
+<!-- Key word for search Engines -->
+<meta name="keywords" content="HTML 5,CSS 3,JavaScript, Jquery, AngularJS/">
+<!-- Description of the webpage -->
+<meta name="description" content="Dynamic Web Development">
+<!-- Author of the webpage -->
+<meta name="author" content="OGHENEKARO">
+<!-- The user's visable area of responsiveness -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- Language of the webpage -->
+<meta name="language" content="Eng">
+<!-- Links webpage to external sytlesheet, which styles HTML document -->
+<link rel="stylesheet" href="main.css"/>
+<script src="https://kit.fontawesome.com/6032ac1386.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href ="font-awesome/css/font-awesome.min.css">
+<title>Personal Information Form</title>
+</head>
+<style>
+body{
+  background-color: lightblue;
+}
+
+
+</style>
+</head>
+
+<body>
+  <h1>Clients / Patients Registration Form</h1>
+  <form>
+    <fieldset>
+      <legend>You can sign up with your identity and submit</legend>
+    <label for="firstname">First Name</label><br/>
+    <input id="firstname" name="firstname" type="text"/></br>
+    </br>
+
+    <label for="middlename">Middle Name</label><br/>
+    <input id="middlename" name="middlename" type="text"/></br>
+    </br>
+
+    <label for="lastname">Last Name</label><br/>
+    <input id="lastname" name="lastname" type="text"/></br>
+    </br>
+
+    <label for="uniqueid">Unique ID</label><br/>
+    <input id="uniqueid" name="uniqueid" type="password" required/></br>
+    </br>
+
+    <label for="dob">Date Of Birth</label><br/>
+    <input id="date" name="dob" type="date" required/></br>
+    </br>
+
+    <label for="sex">Sex:</label><br/>
+    <input type="radio" name="sex" value="Female" id="sex" required/>Female</br>
+    <input type="radio" name="sex" value="Male" id="sex" required/>Male</br>
+    <input type="radio" name="sex" value="Intersex" id="sex" required/>Intersex</br>
+     </br>
+
+
+        <label for="sexualorientation">Sexual Orientation</label>
+          <select id="sexualorientation" name="sexualorientation" required/>
+            <option selected disabled>[Select One]</option>
+            <option value="hetrosexual">Hetrosexual</option>
+            <option value="homosexual">Homosexual</option>
+            <option value="bisexual">Bisexual</option>
+            <option value="others">Others</option>
+          </select></br>
+          </br>
+
+
+
+
+   <label for="tel">Telephone Number:</label><br/>
+    <input type="number" name="tel" id="tel" placeholder="+234-813-115-4753"  pattern="[0-9]{3}-[0-9]-{3}-[0-9]-{5}"/><br/>
+    </br>
+   </br>
+
+ <label for="notes">Other Notes:</label><br/>
+  <textarea  rows="10" cols="50" id="notes">Write Notes Here</textarea><br/>
+   </br>
+
+
+
+
+   </br>
+    <input type="reset" name="reset"/>
+    <input type="submit" value="submit"/></br>
+  </fieldset>
+   </form>
+ </body>
+ </html>

@@ -1,0 +1,275 @@
+/* General-specific styles for all elements*/
+* {
+  box-sizing: border-box;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-]{
+  float: left;
+
+  padding: 10px;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+
+
+body {
+  background-color: #f1f1f1;
+  background-image: linear-gradient(blue, yellow, red);
+  /*margin: 0;*/
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+}
+section {
+  position: relative;
+  top: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+/*CSS media Queries, the screen breakpoints are thus:
+Phones and tiny devices */
+
+Medium landscape tablets:
+@media only screen and (min-width:768px){
+  .col-1{
+    width: 8.33%;
+  }
+}
+
+@media only screen and (max-width:600px){
+
+}
+
+Portrait tablets & large phones:
+@media only screen and (min-width:600px){
+
+}
+
+
+
+Large devices desktops / Laptops
+@media only screen and (min-width:992px){
+
+}
+
+Extra large devices
+@media only screen and (min-width:1200px){
+
+}
+
+/* For The 12 columns for the grid View Layout styles*/
+
+.col-2{
+  width: 16.66%;
+
+}
+.col-3{
+  display: block;
+  width: 25%;
+  list-style-type: none;
+  margin-left: 50px;
+
+
+}
+
+
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+  margin-top: -1600px;
+}
+.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+/*topnav control*/
+.topnav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #000000;
+  color: white;
+  z-index: 1;
+}
+.topnav ul{
+  list-style-type: none;
+}
+.topnav li {
+  display: inline;
+
+}
+.topnav a{
+  text-decoration: none;
+  margin: 50px;
+
+  float: right;
+}
+
+li a{
+  text-decoration: none;
+  font-family: georgian;
+  font-size: 30px;
+  font-style: italic;
+}
+/*The different states for the links*/
+li a:link{
+  color: Black;
+}
+li a:visited{
+  color: orange;
+}
+li a:hover{
+  background-color: Yellow;
+  color: White;
+}
+li a:active{
+  background-color: Red;
+  color: White;
+}
+
+
+
+
+
+
+.column1{
+  width: 200%;
+}
+
+.column2{
+  width: 200%;
+}
+
+.column3{
+  width: 200%;
+}
+
+.left-half {
+  /*background-color: #ff9e2c;*/
+  /*position: absolute;*/
+
+  left: 0px;
+  width: 50%;
+  height: 1500px;
+
+}
+.image1{
+  font-family: cursive;
+  font-style: italic;
+  font-size: 25px bold;
+  font-weight: bolder;
+  color: Black;
+}
+
+.right-half {
+  /*background-color: #b6701e;*/
+  position: relative;
+  float: right;
+  margin-top: 20px;
+  right: 0px;
+  width: 50%;
+  color: Black;
+  font-size: 40px Bold;
+  font-family: cursive;
+  font-style: oblique;
+}
+.image2{
+  font-family: cursive;
+  font-style: italic;
+  font-size: 25px bold;
+  font-weight: bolder;
+  color: Black;
+}
+.split_col{
+  font-size: 25px bold;
+  font-style: italic;
+  font-weight: bolder;
+  column-count: 3;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+
+
+
+
+Body {
+  font-family: cursive;
+
+}
+
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: black;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 5px solid #f1f1f1;
+    }
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 7px 10px;
+        margin: 7px 4px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: black;
+    }
+
+
+
+
+footer{
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height: 99px;
+  padding: 10px;
+  color: White;
+}
